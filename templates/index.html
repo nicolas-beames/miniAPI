@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Cadastro de texto</h1>
+
+    <form id="form">
+      <label for="texto">Texto</label>
+      <br>
+      <div class="row">
+        <input type="text" name="texto" value="Insira o texto" required>
+      </div>
+      <br><br>
+      <div class="row">
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="button" name="atualizar" id="btnListar" value="Atualizar">
+      </div>
+      <div id="msg" role="status" aria-live="polite"></div>
+    </form>
+
+    <div id="tableWrap"></div>
+  </body>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
